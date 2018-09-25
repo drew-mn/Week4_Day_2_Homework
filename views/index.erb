@@ -1,7 +1,7 @@
-<h1> ALL THE PIZZAS </h1>
+<h1>Codeclan Pizza Shop</h1>
 
 <% for order in @orders %>
-  <p> Name: <%= order.pretty_name() %> </p>
-  <p> Order: <%= order.topping_quantity() %> </p>
-  <p><a href = "/pizza-orders/<%= order.id %>" > Show Order </a> </p> 
-<% end %>
+<p> Name: <%= order.pretty_name() %> <br></br>
+  Order: <%= order.topping_quantity() %> <br></br>
+  <a href = "/pizza-orders/<%= order.id %>" > Show Order </a> </p>
+  <% end %>
